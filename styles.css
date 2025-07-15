@@ -1,0 +1,72 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fdf6f9;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #c94f7c;
+  margin-bottom: 30px;
+}
+
+.curriculum-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+}
+
+.cycle-row {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.cycle-row h2 {
+  color: #c94f7c;
+  width: 100%;
+  text-align: left;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.course {
+  background-color: #e6f3fb;
+  border: 2px solid #d4e3f0;
+  color: #333;
+  border-radius: 10px;
+  padding: 10px;
+  min-width: 160px;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px #ccc;
+  transition: 0.3s ease;
+  user-select: none;
+  font-size: 0.95rem;
+}
+
+.course:hover {
+  background-color: #fbe3f0;
+}
+
+.course.locked {
+  background-color: #f0f0f0;
+  color: #aaa;
+  border-style: dashed;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.course.approved {
+  background-color: #cbe7ea;
+  border-color: #91cacc;
+  color: #206163;
+  font-weight: bold;
+}
